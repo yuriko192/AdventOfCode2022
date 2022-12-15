@@ -1,0 +1,21 @@
+TODO:
+    need to check if dir is traversed or not // Create hashmap
+    add command parsing algorithm
+        if([0]==$){
+            is command
+            currDirSize=0
+            if(==cd){
+                append/pop
+                if(command==".."){
+                    currDir.pop()
+                }else{
+                    append(CurrDir, text[1])
+                }
+            }
+        }else{
+            if([0]==dir)// do something
+            {return}
+            convert first text to int, add currDir size
+            currDirSize+=result
+        }
+

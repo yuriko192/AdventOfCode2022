@@ -1,0 +1,7 @@
+$ cd /
+100 dqqbcfr
+$ cd Fold1
+200 mjjj.wnq
+$ cd Fold2
+300 mjjj.wnq
+$ ls
