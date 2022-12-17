@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"reflect"
 	"strings"
 )
 
@@ -35,4 +36,15 @@ func PrettyPrintNum(num int64) (result string) {
 		}
 	}
 	return result
+}
+
+func InitArrayWithValue(length int, value interface{}) interface{} {
+	reflectValue := reflect.ValueOf(value)
+	arr := reflect.MakeSlice(reflect.SliceOf(reflect.TypeOf(value)), length, length)
+
+	for i := 0; i < arr.Len(); i++ {
+		arr.Index(i).Set(reflectValue)
+	}
+
+	return arr.Interface()
 }
